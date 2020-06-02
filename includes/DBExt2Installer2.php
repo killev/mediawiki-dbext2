@@ -2,14 +2,11 @@
 
 declare( strict_types = 1 );
 
-class DBExtInstaller extends MysqlInstaller {
-	public static function inject() {
-		InstallerDbSupport::instance()
-			->registerDBTypes( "dbext", MysqlInstaller::class );
-	}
+namespace DbExt2;
 
+class DBExt2Installer2 extends MysqlInstaller {
 	public function getReadableName() : string {
-		return 'DBExt example similar to mysql';
+		return 'DBExt2 installer2 example similar to mysql';
 	}
 
 //	public function getConnectForm() : string {

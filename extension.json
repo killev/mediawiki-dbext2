@@ -4,20 +4,30 @@
 	"author": [
 		"Art Baltai"
 	],
-	"license": [ "GPL-2.0-or-later" ],
+	"license": [
+		"GPL-2.0-or-later"
+	],
 	"url": "https://www.mediawiki.org/wiki/Extension:DBExt",
 	"descriptionmsg": "DBExt-test",
-	"type": "other",
+	"type": "dbtype",
 	"MessagesDirs": {
 		"CreditsSource": [
 			"i18n"
 		]
 	},
-	"Installer":  {
-		"dbTypes": [ "DBExtInstaller::inject" ]
+	"Installer": {
+		"DbTypes": {
+			"dbext2type1": {
+				"DbInstaller": "DbExt2\\DBExt2Installer1"
+			},
+			"dbext2type2": {
+				"DbInstaller": "DbExt2\\DBExt2Installer2"
+			}
+		}
 	},
 	"AutoloadClasses": {
-		"DBExtInstaller": "includes/DBExtInstaller.php"
+		"DbExt2\\DBExt2Installer2": "includes/DBExt2Installer2.php",
+		"DbExt2\\DBExt1Installer1": "includes/DBExt1Installer1.php"
 	},
 	"manifest_version": 1
 }
