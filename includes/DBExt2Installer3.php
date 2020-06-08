@@ -4,11 +4,10 @@ declare( strict_types = 1 );
 
 namespace DbExt2;
 
-use SqliteInstaller;
 
-class DBExt2Installer2 extends SqliteInstaller {
+class DBExt2Installer3 {
 	public function getReadableName() : string {
-		return 'DbExt2 installer2 example similar to Sqlite';
+		return 'DbExt2 installer3 with wrong contract';
 	}
 
 //	public function getConnectForm() : string {

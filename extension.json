@@ -1,5 +1,5 @@
 {
-	"name": "DBExt",
+	"name": "DBExt2 with 4 db types",
 	"version": "0.0.1",
 	"author": [
 		"Art Baltai"
@@ -7,11 +7,11 @@
 	"license": [
 		"GPL-2.0-or-later"
 	],
-	"url": "https://www.mediawiki.org/wiki/Extension:DBExt",
-	"descriptionmsg": "DBExt-test",
+	"url": "https://www.mediawiki.org/wiki/Extension:DBExt2",
+	"descriptionmsg": "DBExt2 test",
 	"type": "dbtype",
 	"MessagesDirs": {
-		"CreditsSource": [
+		"DBExt2": [
 			"i18n"
 		]
 	},
@@ -22,12 +22,20 @@
 			},
 			"dbext2type2": {
 				"DbInstaller": "DbExt2\\DBExt2Installer2"
+			},
+			"dbext2type3": {
+				"DbInstaller": "DbExt2\\DBExt2Installer3"
+			},
+			"dbext2type4": {
+				"DbInstaller": "DbExt2\\DBExt2Installer4"
 			}
 		}
 	},
 	"AutoloadClasses": {
+		"DbExt2\\DBExt2Installer1": "includes/DBExt2Installer1.php",
 		"DbExt2\\DBExt2Installer2": "includes/DBExt2Installer2.php",
-		"DbExt2\\DBExt1Installer1": "includes/DBExt1Installer1.php"
+		"DbExt2\\DBExt2Installer3": "includes/DBExt2Installer3.php",
+		"DbExt2\\DBExt2Installer4": "includes/DBExt2Installer4.php"
 	},
 	"manifest_version": 1
 }

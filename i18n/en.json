@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"config-dbsupport-dbext2type1": "dbext2 i18n:en dbext2type1 !!!!!!!!!!!!<br />",
+	"config-dbsupport-dbext2type2": "dbext2 i18n:en dbext2type2 !!!!!!!!!!!!<br />",
+	"config-header-dbext2type1": "dbext2 i18n:en installer1 основан на Mysql",
+	"config-header-dbext2type2": "dbext2 i18n:en installer2 основан на Sqlite"
+}
+
