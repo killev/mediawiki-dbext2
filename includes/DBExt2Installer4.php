@@ -17,10 +17,6 @@ class DBExt2Installer4 extends DatabaseInstaller {
 		};
 	}
 
-	public function getReadableName() : string {
-		return 'DbExt2 installer4 with pure contract';
-	}
-
 	public function getConnectForm() : string {
 		return __CLASS__;
 	}
@@ -30,7 +26,7 @@ class DBExt2Installer4 extends DatabaseInstaller {
 	}
 
 	public function getName() {
-		return __METHOD__;
+		return 'dbext2type4';
 	}
 
 	public function submitConnectForm() {

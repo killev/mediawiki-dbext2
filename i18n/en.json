@@ -2,9 +2,13 @@
 	"@metadata": {
 		"authors": []
 	},
-	"config-dbsupport-dbext2type1": "dbext2 i18n:en dbext2type1 !!!!!!!!!!!!<br />",
-	"config-dbsupport-dbext2type2": "dbext2 i18n:en dbext2type2 !!!!!!!!!!!!<br />",
-	"config-header-dbext2type1": "dbext2 i18n:en installer1 основан на Mysql",
-	"config-header-dbext2type2": "dbext2 i18n:en installer2 основан на Sqlite"
+	"config-type-dbext2type1": "DbExt2 installer 1",
+	"config-type-dbext2type2": "DbExt2 installer 2",
+	"config-type-dbext2type4": "DbExt2 installer 4",
+	"config-dbsupport-dbext2type1": "* dbext2 i18n:en dbext2type1 !!!!!!!!!!!!",
+	"config-dbsupport-dbext2type2": "* dbext2 i18n:en dbext2type2 !!!!!!!!!!!!",
+	"config-dbsupport-dbext2type4": "* dbext2 i18n:en dbext2type4 !!!!!!!!!!!!",
+	"config-header-dbext2type1": "dbext2 i18n:en installer1 settings",
+	"config-header-dbext2type2": "dbext2 i18n:en installer2 settings",
+	"config-header-dbext2type4": "dbext2 i18n:en installer4 settings"
 }
-
