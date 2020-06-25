@@ -9,25 +9,28 @@
 	],
 	"url": "https://www.mediawiki.org/wiki/Extension:DBExt2",
 	"descriptionmsg": "DBExt2 test",
-	"type": "dbtype",
+	"type": "database",
 	"MessagesDirs": {
 		"DBExt2": [
 			"i18n"
 		]
 	},
-	"Installer": {
-		"DbTypes": {
+	"Providers": {
+		"Databases": {
 			"dbext2type1": {
-				"DbInstaller": "DbExt2\\DBExt2Installer1"
+				"Installer": "DbExt2\\DBExt2Installer1",
+				"Updater": "DbExt2\\DBExt2Updater1",
+				"Driver": "DbExt2\\DBExt2Driver1"
 			},
 			"dbext2type2": {
-				"DbInstaller": "DbExt2\\DBExt2Installer2"
-			},
-			"dbext2type3": {
-				"DbInstaller": "DbExt2\\DBExt2Installer3"
+				"Installer": "DbExt2\\DBExt2Installer2",
+				"Updater": "DbExt2\\DBExt2Updater2",
+				"Driver": "DbExt2\\DBExt2Driver2"
 			},
 			"dbext2type4": {
-				"DbInstaller": "DbExt2\\DBExt2Installer4"
+				"Installer": "DbExt2\\DBExt2Installer4",
+				"Updater": "DbExt2\\DBExt2Updater4",
+				"Driver": "DbExt2\\DBExt2Driver4"
 			}
 		}
 	},
@@ -35,7 +38,15 @@
 		"DbExt2\\DBExt2Installer1": "includes/DBExt2Installer1.php",
 		"DbExt2\\DBExt2Installer2": "includes/DBExt2Installer2.php",
 		"DbExt2\\DBExt2Installer3": "includes/DBExt2Installer3.php",
-		"DbExt2\\DBExt2Installer4": "includes/DBExt2Installer4.php"
+		"DbExt2\\DBExt2Installer4": "includes/DBExt2Installer4.php",
+		"DbExt2\\DBExt2Updater1": "includes/DBExt2Updater1.php",
+		"DbExt2\\DBExt2Updater2": "includes/DBExt2Updater2.php",
+		"DbExt2\\DBExt2Updater3": "includes/DBExt2Updater3.php",
+		"DbExt2\\DBExt2Updater4": "includes/DBExt2Updater4.php",
+		"DbExt2\\DBExt2Driver1": "includes/DBExt2Driver1.php",
+		"DbExt2\\DBExt2Driver2": "includes/DBExt2Driver2.php",
+		"DbExt2\\DBExt2Driver4": "includes/DBExt2Driver4.php"
+
 	},
 	"manifest_version": 1
 }
